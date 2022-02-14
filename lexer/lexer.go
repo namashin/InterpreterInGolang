@@ -127,6 +127,7 @@ func (l *Lexer) NextToken() token.Token {
 			tok.Literal = l.readNumber()
 			return tok
 		} else {
+			// 欠測の場合
 			tok = newToken(token.ILLEGAL, l.ch)
 		}
 	}

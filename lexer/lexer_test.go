@@ -116,18 +116,18 @@ let le = leting;
 
 	l := NewLexer(input)
 
-	for i, tt := range tests {
+	for i, TokenTypeAndLiteral := range tests {
 		tok := l.NextToken()
-		fmt.Println(tt)
+		fmt.Println(TokenTypeAndLiteral)
 
-		if tok.Type != tt.expectedType {
+		if tok.Type != TokenTypeAndLiteral.expectedType {
 			t.Fatalf("tests[%d] - tokentype wrong. expected =>>> %q, but got =>>> %q",
-				i, tt.expectedLiteral, tok.Literal)
+				i, TokenTypeAndLiteral.expectedLiteral, tok.Literal)
 		}
 
-		if tok.Literal != tt.expectedLiteral {
+		if tok.Literal != TokenTypeAndLiteral.expectedLiteral {
 			t.Fatalf("tests[%d] - literal wrong. expected =>>> %q, but got =>>> %q",
-				i, tt.expectedLiteral, tok.Literal)
+				i, TokenTypeAndLiteral.expectedLiteral, tok.Literal)
 		}
 	}
 }

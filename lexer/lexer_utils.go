@@ -14,6 +14,8 @@ func isDigit(ch byte) bool {
 	return '0' <= ch && ch <= '9'
 }
 
+// newToken
+// 引数で渡された、tokenTypeとchを構造体に入れて返す
 func newToken(tokenType token.TokenType, ch byte) token.Token {
 	return token.Token{Type: tokenType, Literal: string(ch)}
 }

@@ -5,7 +5,6 @@ import (
 	"os"
 )
 
-func main(){
+func main() {
 	repl.Start(os.Stdout, os.Stdout)
 }
-
