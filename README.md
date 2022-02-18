@@ -1,18 +1,19 @@
 # InterpreterInGolang
 
 ## Overview
-making Interpreter in Golang
+Making Interpreter in Golang
 
 
 ## Requirement
-native Golang
+
+Go 1.17.2 (worked)
 
 ## Usage
 your source code -> lexical analysis -> token -> parser -> evaluating -> 
 
 ## Features
 
-your original interpreter
+Your original interpreter
 
 ## Reference
 
