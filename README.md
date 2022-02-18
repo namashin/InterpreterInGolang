@@ -8,7 +8,7 @@ making Interpreter in Golang
 native Golang
 
 ## Usage
-your source code -> lexical analysis -> token -> parser -> (under making)
+your source code -> lexical analysis -> token -> parser -> evaluating -> 
 
 ## Features
 
