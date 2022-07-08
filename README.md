@@ -3,7 +3,6 @@
 ## Overview
 Making Interpreter in Golang
 
-
 ## Requirement
 
 Go 1.17.2 (worked)
@@ -18,9 +17,3 @@ Your original interpreter
 ## Reference
 
 Writing A Compiler in Go
-
-## Author
-
-Thorsten Ball
-
-## Licence
